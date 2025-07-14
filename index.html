@@ -125,6 +125,30 @@
       color: #1E002B;
       border: 1.5px solid #E7E3D4;
     }
+    @media (max-width: 768px) {
+      .timeline {
+        padding: 0;
+      }
+      .timeline::before {
+        left: 20px;
+        margin-left: 0;
+      }
+      .timeline-item {
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 10px;
+        left: 0 !important;
+        margin-bottom: 30px;
+      }
+      .timeline-item::before {
+        left: 20px !important;
+        right: auto !important;
+      }
+    }
+    .timeline-content {
+      text-align: left;
+      word-break: break-word;
+    }
   </style>
 </head>
 <body class="bg-gray-100 font-sans" style="background: #E7E3D4;">
